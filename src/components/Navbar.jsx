@@ -121,37 +121,89 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="lg:hidden bg-deepNavy text-white px-4 py-4 space-y-2 text-sm">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <details className="group">
-              <summary className="cursor-pointer">Services</summary>
-              <div className="ml-4 space-y-1">
-                <a href="/remodeling">Remodeling</a>
-                <a href="/security">Security</a>
-                <a href="/ac">Air Conditioning</a>
-                <a href="/steel-cage">Steel Cage</a>
-                <a href="/electrical">Electrical</a>
-                <a href="/painting">Painting</a>
-                <a href="/roofing">Roofing</a>
-                <a href="/flooring">Flooring</a>
-              </div>
-            </details>
-            <a href="/blog">Blog</a>
-            <a href="/appointment">Appointment</a>
-            <div className="pt-3 border-t border-gray-500">
-              <span>📞 (346) 365-7221</span>
-              <span className="block text-xs italic">Free Quotes</span>
-              <button className="mt-2 bg-white text-primary px-4 py-1 rounded-full text-sm">
-                Get a Quote
-              </button>
-              <button onClick={toggleDarkMode} className="ml-4 text-white">
-                {darkMode ? <FaSun /> : <FaMoon />}
-              </button>
+        <AnimatePresence>
+  {menuOpen && (
+    <motion.div
+      initial={{ x: '-100%' }}
+      animate={{ x: 0 }}
+      exit={{ x: '-100%' }}
+      transition={{ type: 'tween', duration: 0.4 }}
+      className="fixed top-0 left-0 w-4/5 max-w-xs h-full bg-deepNavy text-white z-[99] px-6 py-8 shadow-2xl"
+    >
+      {/* Close Button */}
+      <div className="flex justify-end mb-6">
+        <FaTimes onClick={() => setMenuOpen(false)} className="text-2xl cursor-pointer" />
+      </div>
+
+      {/* Menu Items */}
+      <motion.ul
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
+        className="space-y-6"
+      >
+        {[
+          { label: 'Home', path: '/' },
+          { label: 'About', path: '/about' },
+          { label: 'Blog', path: '/blog' },
+          { label: 'Appointment', path: '/appointment' },
+        ].map((item, i) => (
+          <motion.li
+            key={i}
+            variants={{
+              hidden: { opacity: 0, x: -20 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <a
+              href={item.path}
+              onClick={() => setMenuOpen(false)}
+              className="block text-lg font-medium transition-all duration-300 relative group"
+            >
+              <span className="group-hover:ml-2 transition-all duration-300">{item.label}</span>
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300"></span>
+            </a>
+          </motion.li>
+        ))}
+
+        {/* Services Dropdown */}
+        <motion.li
+          variants={{
+            hidden: { opacity: 0, x: -20 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <details className="group cursor-pointer">
+            <summary className="text-lg font-medium mb-2 hover:underline">Services</summary>
+            <div className="ml-4 space-y-1 text-sm text-gray-300">
+              <a href="/remodeling" className="block hover:text-white">Remodeling</a>
+              <a href="/security" className="block hover:text-white">Security</a>
+              <a href="/ac" className="block hover:text-white">AC Installation</a>
+              <a href="/steel-cage" className="block hover:text-white">Steel Cage</a>
+              <a href="/electrical" className="block hover:text-white">Electrical</a>
+              <a href="/painting" className="block hover:text-white">Painting</a>
+              <a href="/roofing" className="block hover:text-white">Roofing</a>
+              <a href="/flooring" className="block hover:text-white">Flooring</a>
             </div>
-          </div>
-        )}
+          </details>
+        </motion.li>
+      </motion.ul>
+
+      {/* Call to Action */}
+      <div className="mt-10">
+        <button className="bg-white text-primary font-semibold px-4 py-2 rounded-full w-full hover:bg-gray-200 transition">
+          Get a Quote
+        </button>
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
       </nav>
     </div>
     </>
