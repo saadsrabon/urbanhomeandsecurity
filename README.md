@@ -1,12 +1,46 @@
-# React + Vite
+# 🛡️ Urban Home & Security — React + Tailwind CSS Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for **Urban Home & Security**, built using **React**, **Vite**, **Tailwind CSS v4.1**, and **Framer Motion**. Includes dynamic navbar, custom theme, dark mode, scroll effects, animations, and component-based architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Responsive Layout (Mobile to Desktop)
+- ✅ Sticky Navigation Bar with Dropdown Menus
+- ✅ Custom Theme Colors (Primary, Dark Blue, Deep Navy)
+- ✅ Dark Mode Toggle
+- ✅ Scroll Shadow Effects
+- ✅ Animated Logo Transition on Page Load
+- ✅ `framer-motion` Animations
+- ✅ Modern UI with Tailwind v4.1 tokens
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎨 Tech Stack
+
+| Tech            | Use                          |
+|-----------------|------------------------------|
+| React           | Frontend Framework           |
+| Vite            | Fast build tool              |
+| Tailwind CSS 4.1| Styling                      |
+| Framer Motion   | Animations                   |
+| React Icons     | Icon library                 |
+
+---
+
+## 🧱 Folder Structure
+
+```bash
+urban-security/
+├── public/
+├── src/
+│   ├── assets/              # Logo, images
+│   ├── components/          # Navbar, Footer, Buttons
+│   ├── pages/               # Home, About, Services, Blog
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
