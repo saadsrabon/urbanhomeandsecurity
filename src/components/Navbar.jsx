@@ -109,7 +109,7 @@ export default function Navbar() {
             <button className="bg-white text-primary px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition">
               Get a Quote
             </button>
-            <button onClick={toggleDarkMode} className="text-white">
+            <button onClick={toggleDarkMode} className="text-[#0096C7]">
               {darkMode ? <FaSun /> : <FaMoon />}
             </button>
           </div>
@@ -127,7 +127,7 @@ export default function Navbar() {
             <a href="/about">About</a>
             <details className="group">
               <summary className="cursor-pointer">Services</summary>
-              <div className="ml-4 space-y-1">
+              <div className="ml-4 space-y-1 flex flex-col">
                 <a href="/remodeling">Remodeling</a>
                 <a href="/security">Security</a>
                 <a href="/ac">Air Conditioning</a>
@@ -138,8 +138,10 @@ export default function Navbar() {
                 <a href="/flooring">Flooring</a>
               </div>
             </details>
-            <a href="/blog">Blog</a>
-            <a href="/appointment">Appointment</a>
+            <div className='flex gap-8'>
+            <a className='border px-4 py-1 rounded-md' href="/blog">Blog</a>
+            <a className='border px-4 py-1 rounded-md' href="/appointment">Appointment</a>
+            </div>
             <div className="pt-3 border-t border-gray-500">
               <span>📞 (346) 365-7221</span>
               <span className="block text-xs italic">Free Quotes</span>
