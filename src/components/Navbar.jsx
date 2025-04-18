@@ -65,12 +65,12 @@ export default function Navbar() {
       </AnimatePresence>
     <div className={`${darkMode ? 'dark' : ''}`}>
       {/* Top Info Bar */}
-      <div className="bg-darkBlue text-white text-sm px-4 py-2 flex flex-col md:flex-row justify-between items-center">
-        <div className="flex flex-col md:flex-row gap-2">
-          <span>📧 info@urbanhomeandsecurity.com</span>
-          <span>📍 Houston, TX</span>
+      <div className="bg-darkBlue text-white text-sm px-4 md:px-18 py-2 flex justify-center md:flex-row md:justify-between items-center">
+        <div className="flex justify-center items-center md:flex-row gap-2">
+          <span className='border-r pr-5'>📧 info@urbanhomeandsecurity.com</span>
+          <span className=' pl-2'>📍 Houston, TX</span>
         </div>
-        <div className="flex gap-3 mt-2 md:mt-0">
+        <div className="hidden md:flex gap-3 mt-2 md:mt-0">
           <a href="#"><FaFacebookF /></a>
           <a href="#"><FaTwitter /></a>
           <a href="#"><FaInstagram /></a>
