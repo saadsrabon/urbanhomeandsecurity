@@ -79,7 +79,12 @@ export default function Navbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav className={`transition-all duration-300 ${scrolled ? 'shadow-md py-2' : 'py-4'}text-white sticky top-0 z-50`}>
+      <nav
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+    scrolled
+      ? 'bg-primary lg:py-2 py-4 shadow-md'
+      : 'bg-transparent lg:py-6 py-4'
+  } text-white backdrop-blur-md`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="text-xl font-bold"><img  className="w-40 h-auto" src={logo} alt="" /></div>
 

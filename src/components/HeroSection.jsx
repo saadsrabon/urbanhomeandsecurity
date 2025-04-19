@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImg from "../assets/hero.jpg"; // or your background image
+// import heroImg from "../assets/hero.jpg"; // or your background image
 
 export default function HeroSection() {
   return (
@@ -46,7 +46,7 @@ export default function HeroSection() {
           transition={{ delay: 0.6, duration: 1 }}
         >
           <img
-            src={heroImg}
+            // src={heroImg}
             alt="Remodeling Hero"
             className="w-full max-w-lg rounded-xl shadow-2xl"
           />
