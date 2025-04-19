@@ -1,7 +1,19 @@
+/* google font */
+/* Montserrat Bold */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
 @import "tailwindcss";
 @plugin "daisyui";
 @theme {
   --color-primary: #0096c7;
   --color-darkBlue: #023E8A;
   --color-deepNavy: #0f1c3f;
+  --font-monst: "Montserrat";
+  --font-roboto: "Roboto";
+  --font-oswald: "Oswald";
 }
