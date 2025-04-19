@@ -40,7 +40,7 @@ const About = () => {
         {/* right text */}
         <div>
           <h1>Customer-Centric Approach</h1>
-          <p>Auctor neque feugiat ornare rhoncus. Odio sed porta in nibh dui. Orci hac blandit.</p>
+          <p>Auctor neque feugiat ornare rhoncus. Odio sed porta in nibh dui. Orci hac blandit. </p>
         </div>
       </div>
     </div>
