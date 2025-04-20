@@ -15,7 +15,14 @@ const About = () => {
             Discover Our <br /> Security Legacy
           </h2>
           <p className="text-[#777777] font-roboto mt-4">
-          Building trust and delivering protection—Urban Security, your partner in safety and service.
+          In a world where safety can no longer be assumed, Urban Security was built to provide peace of mind through presence, precision, and professionalism.
+          </p>
+          <p className="text-[#777777] font-roboto mt-4">
+          Born out of a need for dependable, community-centered protection in densely populated areas, Urban Security delivers tailored security solutions for residential buildings, commercial properties, events, and high-traffic urban environments.
+          </p>
+          <p className="text-[#777777] font-roboto mt-4">
+          We understand that security isn't just about standing guard—it's about being seen, being prepared, and being trusted. Every patrol we make, every post we hold, and every threat we deter is rooted in a commitment to keep people, property, and peace intact.
+
           </p>
           <button className="mt-6 font-oswald bg-black text-white text-lg lg:text-2xl tracking-wider px-6 py-2 rounded-xl hover:bg-[#D7263D] transition-all duration-300">
             Learn More

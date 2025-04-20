@@ -36,7 +36,8 @@ export default function Navbar() {
   return (
     <>
       {/* Initial Logo Animation */}
-      <AnimatePresence>
+      { window.location.pathname === '/' &&(
+      <AnimatePresence >
         {showIntro && (
           <motion.div
             className="fixed inset-0 bg-white dark:bg-black z-[100] flex items-center justify-center"
@@ -62,7 +63,8 @@ export default function Navbar() {
             />
           </motion.div>
         )}
-      </AnimatePresence>
+        </AnimatePresence>)
+      }
       <div className={`${darkMode ? 'dark' : ''}`}>
         {/* Top Info Bar */}
         <div className="bg-[#0A1F44] text-white text-sm px-4 md:px-18 py-2 flex justify-center md:flex-row md:justify-between items-center">

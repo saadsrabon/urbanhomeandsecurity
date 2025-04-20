@@ -1,8 +1,10 @@
 import React from 'react';
+import About from './About';
 
 const Home = () => {
   return (
-    <section className='container mx-auto px-4 h-[1000px]'>
+    <>
+    <section className='container mx-auto px-4 max-h-[1000px]'>
       <div
         className="relative rounded-2xl bg-cover   flex items-center"
         style={{
@@ -29,6 +31,8 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <About />
+    </>
   );
 };
 
