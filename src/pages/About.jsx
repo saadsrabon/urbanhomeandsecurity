@@ -54,9 +54,10 @@ const About = () => {
           We understand that security isn't just about standing guard—it's about being seen, being prepared, and being trusted. Every patrol we make, every post we hold, and every threat we deter is rooted in a commitment to keep people, property, and peace intact.
         </p>
         <button className="mt-6 font-oswald bg-black text-white text-lg lg:text-2xl tracking-wider px-6 py-2 rounded-xl hover:bg-[#D7263D] transition-all duration-300">
-          Learn More
+          Learn More 
         </button>
       </motion.div>
+      {/* hii */}
 
       {/* Stats and small image */}
       <motion.div className="grid grid-cols-3 gap-6 items-center mt-8" variants={fadeUp}>
