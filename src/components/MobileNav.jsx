@@ -51,7 +51,7 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
           animate="visible"
           exit="exit"
           variants={sidebarVariants}
-          className="fixed top-0 left-0 w-4/5 max-w-sm h-full z-50 bg-[#0A1F44] text-white px-6 py-6 space-y-4 shadow-lg backdrop-blur-md overflow-y-auto flex flex-col"
+          className="fixed top-0 left-0 w-4/5 max-w-sm h-full z-50 bg-black/80 text-white px-6 py-6 space-y-4 shadow-lg backdrop-blur-md overflow-y-auto flex flex-col"
         >
           {["Home", "About", "Blog", "Appointment"].map((item, index) => (
             <motion.a

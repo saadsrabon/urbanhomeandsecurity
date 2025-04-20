@@ -121,10 +121,10 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <ul  className={`transition-all duration-300 z-50 hidden lg:flex gap-10 text-xl items-center font-monst border-none  ${
     scrolled
-      ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-8 py-3 shadow-lg border border-white/10"
+      ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-6 py-3 shadow-lg border border-white/10"
       : "py-4 sticky top-0"
   }`}>
-              <li>
+              <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300">
                 <a
                   className="hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
                   href="/"
@@ -132,19 +132,19 @@ export default function Navbar() {
                   Home
                 </a>
               </li>
-              <li>
+              <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300">
                 <a
-                  className="hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
+                  className=" hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
                   href="/about"
                 >
                   About
                 </a>
               </li>
-              <li className="group relative">
+              <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300 group relative">
                 <button className="flex items-center gap-1 hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300">
                   Services ▾
                 </button>
-                <ul className="absolute hidden group-hover:block bg-white text-[#0A1F44] p-2 shadow-lg rounded mt-1">
+                <ul className="absolute top-12 hidden group-hover:block bg-white text-[#0A1F44] p-2 w-[400px] shadow-lg rounded mt-1">
                   <li>
                     <a
                       href="/remodeling"
