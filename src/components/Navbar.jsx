@@ -37,7 +37,7 @@ export default function Navbar() {
   return (
     <>
       {/* Initial Logo Animation */}
-      {window.location.pathname === "/" && (
+      {/* {window.location.pathname === "/" && (
         <AnimatePresence>
           {showIntro && (
             <motion.div
@@ -64,7 +64,7 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-      )}
+      )} */}
       <div className={`${darkMode ? "dark" : ""}`}>
         {/* Top Info Bar */}
         <div className="bg-black text-white text-sm px-4 md:px-18 py-2 flex justify-center md:flex-row md:justify-between items-center">
@@ -121,7 +121,7 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <ul  className={`transition-all duration-300 z-50 hidden lg:flex gap-10 text-xl items-center font-monst border-none  ${
     scrolled
-      ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-6 py-3 shadow-lg border border-white/10"
+      ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-6 py-3 shadow-lg border border-white/10 "
       : "py-4 sticky top-0"
   }`}>
               <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300">
