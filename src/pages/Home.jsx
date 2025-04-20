@@ -4,7 +4,7 @@ import About from './About';
 const Home = () => {
   return (
     <>
-    <section className='container mx-auto px-4 max-h-[1000px]'>
+    <section className='container mx-auto px-4 max-h-screen font-monst'>
       <div
         className="relative rounded-2xl bg-cover   flex items-center"
         style={{
@@ -17,16 +17,16 @@ const Home = () => {
         {/* Content */}
         <div className="relative z-10 px-8 lg:px-16 text-white p-30">
           <div className="max-w-2xl">
-            <h1 className="mb-5 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Building trust and delivering protection—<br />
               <span className="text-[#D7263D]">Urban Security</span>, your partner in safety and service.
             </h1>
             <p className="mb-8 text-lg opacity-90">
               To provide disciplined, dependable, and professional security services that protect lives, property, and peace of mind across Houston and beyond.
             </p>
-            <button className="btn bg-[#D7263D] px-8 py-3 text-lg ">
-              Get Started
-            </button>
+            <button className=" font-oswald bg-[#D7263D] text-white text-lg lg:text-2xl tracking-wider px-6  rounded-xl pb-3 pt-2 hover:bg-[#D7263D] transition-all duration-300 li">
+            Learn More
+          </button>
           </div>
         </div>
       </div>

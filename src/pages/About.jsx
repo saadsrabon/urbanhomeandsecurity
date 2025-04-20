@@ -5,7 +5,7 @@ import rightBigImage from '../assets/rear-view-of-guard-in-black-uniform-with-ea
 const About = () => {
   return (
     // main section 
-    <section className="container mx-auto px-6 py-16">
+    <section className="container mx-auto px-6 py-16 font-monst">
     <div className="grid lg:grid-cols-2 gap-10 items-center">
       {/* Left Section */}
       <div className="space-y-6">
