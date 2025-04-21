@@ -2,6 +2,7 @@ import React from 'react';
 import About from './About';
 
 import { motion } from 'framer-motion';
+import WhyChooseUS from './WhyChooseUS';
 const Home = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -68,6 +69,7 @@ const Home = () => {
       </div>
     </section>
     <About />
+    <WhyChooseUS></WhyChooseUS>
     </>
   );
 };
