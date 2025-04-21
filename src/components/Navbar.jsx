@@ -77,7 +77,9 @@ export default function Navbar() {
               >
                info@urbanhomeandsecurity.com
             </motion.span>
-           <span className=" pl-2"> Houston, TX</span>
+           <motion.span  initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }} className=" pl-2"> Houston, TX</motion.span>
           </div>
           <div className="hidden md:flex gap-4 mt-2 md:mt-0">
             <a
@@ -119,7 +121,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Nav */}
-            <ul  className={`transition-all duration-300 z-50 hidden lg:flex gap-10 text-xl items-center font-monst border-none  ${
+            <ul  className={`transition-all duration-300 z-50 hidden lg:flex gap-10 text-xl items-center font-monst border-none text-black  ${
     scrolled
       ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-6 py-3 shadow-lg border border-white/10 "
       : "py-4 sticky top-0"
@@ -243,7 +245,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Toggle */}
-            <button className="lg:hidden text-2xl" onClick={toggleMenu}>
+            <button className="lg:hidden text-2xl text-black" onClick={toggleMenu}>
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>

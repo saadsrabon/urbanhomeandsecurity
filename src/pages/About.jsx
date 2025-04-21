@@ -40,8 +40,8 @@ const About = () => {
     {/* Left Section */}
     <div className="space-y-6">
       <motion.div variants={fadeUp}>
-        <p className="font-roboto text-sm font-medium text-[#111]">About Us</p>
-        <h2 className="text-4xl lg:text-5xl font-semibold font-monst leading-tight mt-2">
+        <p className="font-monst text-sm font-medium text-[#111]">About Us</p>
+        <h2 className="text-4xl lg:text-5xl font-semibold text-black font-monst leading-tight mt-2">
           Discover Our <br /> Security Legacy
         </h2>
         <p className="text-[#777777] font-roboto mt-4">
@@ -94,8 +94,8 @@ const About = () => {
       </div>
       {/* Text below image */}
       <div>
-        <h3 className="text-lg font-semibold">Customer-Centric Approach</h3>
-        <p className="text-[#777777] mt-2">
+        <h3 className="text-lg font-semibold  ">Customer-Centric Approach</h3>
+        <p className="text-[#777777] mt-2 font-monst">
           To provide disciplined, dependable, and professional security services that protect lives, property, and peace of mind across Houston and beyond.
         </p>
       </div>
