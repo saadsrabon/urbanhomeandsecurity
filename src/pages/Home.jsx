@@ -3,6 +3,7 @@ import About from './About';
 
 import { motion } from 'framer-motion';
 import WhyChooseUS from './WhyChooseUS';
+import OurService from './OurService';
 const Home = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -70,6 +71,7 @@ const Home = () => {
     </section>
     <About />
     <WhyChooseUS></WhyChooseUS>
+    <OurService></OurService>
     </>
   );
 };

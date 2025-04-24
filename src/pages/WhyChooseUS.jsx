@@ -21,22 +21,22 @@ const services = [
 const WhyChooseUS = () => {
     return (
         <section className="px-16 py-16 max-w-7xl mx-auto bg-black rounded-md mb-40">
-            <h2 className="text-4xl font-bold mb-10 font-monst">Why Choose Us</h2>
+            <h2 className="text-4xl text-white font-bold mb-10 font-monst">Why Choose Us</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6 border-t border-b py-10">
                 {services.map((service, index) => (
                     <div key={index} className="flex items-start gap-4">
-                        <div className="bg-black p-3 rounded-md">
+                        <div className="bg-black p-3 rounded-md text-[#00A3FF]">
                             {service.icon}
                         </div>
                         <div>
-                            <h4 className="font-semibold text-lg mb-1">{service.title}</h4>
-                            <p className="text-sm text-gray-500">Scelerisque pulvinar morbi felis odio ut mauris diam sit.</p>
+                            <h4 className="font-semibold text-lg mb-1 text-[#00A3FF]">{service.title}</h4>
+                            <p className="text-sm text-red-100">Scelerisque pulvinar morbi felis odio ut mauris diam sit.</p>
                         </div>
                     </div>
                 ))}
             </div>
 
-                
+
 
         </section>
     );
