@@ -4,6 +4,7 @@ import About from './About';
 import { motion } from 'framer-motion';
 import WhyChooseUS from './WhyChooseUS';
 import OurService from './OurService';
+import OurTeam from './OurTeam';
 const Home = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -29,7 +30,7 @@ const Home = () => {
   };
   return (
     <>
-    <section className='container mx-auto px-4 max-h-screen font-monst'>
+    <section className='container mx-auto px-4 max-h-screen font-monst mt-10'>
       <div
         className="relative rounded-2xl bg-cover   flex items-center"
         style={{
@@ -70,8 +71,9 @@ const Home = () => {
       </div>
     </section>
     <About />
-    <WhyChooseUS></WhyChooseUS>
     <OurService></OurService>
+    <WhyChooseUS></WhyChooseUS>
+    <OurTeam></OurTeam>
     </>
   );
 };

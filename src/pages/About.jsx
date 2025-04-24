@@ -29,7 +29,7 @@ const About = () => {
   
   return (
     // main section 
-    <section className="container mx-auto px-6 py-16 font-monst">
+    <section className="container mx-auto px-6 py-16 font-monst mt-30">
   <motion.div
     className="grid lg:grid-cols-2 gap-10 items-center"
     variants={container}

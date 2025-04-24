@@ -1,31 +1,38 @@
 import React from 'react';
+import Serivce1 from '../assets/service-1.jpg'
+import Serivce2 from '../assets/service-2.jpg'
+import Serivce3 from '../assets/service-3.jpg'
 
 const OurService = () => {
     return (
-        <div className="bg-gray-900 py-16 md:py-24">
+        <div className="bg-gray-900 py-16 md:py-24 mt-20">
             <div className="container mx-auto px-4">
-                <div className="mb-12 text-center">
-                    <h2 className="text-2xl font-semibold text-gray-400 uppercase tracking-widest mb-2">
-                        Our Services
-                    </h2>
-                    <h3 className="text-4xl font-bold text-white">
-                        Our Comprehensive Security Services
-                    </h3>
-                    <a
-                        href="#"
-                        className="inline-block mt-6 bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300"
-                    >
-                        See All Services
-                    </a>
+                <div className="mb-12 flex justify-between items-center">
+                    {/* text */}
+                    <div className='space-y-3'>
+                        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-2">
+                            Our Services
+                        </h2>
+                        <h3 className="text-5xl font-bold font-monst text-white">
+                            Our Comprehensive
+                        </h3>
+                        <h3 className="text-5xl font-bold font-monst text-white ">
+                            <span className='text-[#00A3FF]'>Security</span> Services
+                        </h3>
+                    </div>
+                    {/* Button */}
+                    <div>
+                        <a href="#" className="inline-block mt-6 bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300" > See All Services </a>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Risk Management Card */}
+                    {/* Risk  Card */}
                     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                         <div className="h-64 bg-gray-700 flex items-center justify-center">
-                            {/* Image Placeholder */}
+                            {/* Image  */}
                             <img
-                                src="https://placehold.co/400x200/000/FFF?text=Risk+Mgmt&font=Montserrat"
+                                src={Serivce1}
                                 alt="Risk Management"
                                 className="w-full h-full object-cover"
                             />
@@ -39,10 +46,8 @@ const OurService = () => {
                             {/* Red Arrow Icon */}
                             <div className="flex justify-end mt-4">
                                 <svg
-                                    xmlns="http://www.w3.org/2000/svg"
                                     className="h-6 w-6 text-red-500"
                                     fill="none"
-                                    viewBox="0 0 24 24"
                                     stroke="currentColor"
                                 >
                                     <path
@@ -56,12 +61,12 @@ const OurService = () => {
                         </div>
                     </div>
 
-                    {/* Crisis Management Card */}
+                    {/* Crisis Card */}
                     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                         <div className="h-64 bg-gray-700 flex items-center justify-center">
                             {/* Image Placeholder */}
                             <img
-                                src="https://placehold.co/400x200/000/FFF?text=Crisis+Mgmt&font=Montserrat"
+                                src={Serivce2}
                                 alt="Crisis Management"
                                 className="w-full h-full object-cover"
                             />
@@ -97,7 +102,7 @@ const OurService = () => {
                         <div className="h-64 bg-gray-700 flex items-center justify-center">
                             {/* Image Placeholder */}
                             <img
-                                src="https://placehold.co/400x200/000/FFF?text=Security+Mgmt&font=Montserrat"
+                                src={Serivce3}
                                 alt="Security Management"
                                 className="w-full h-full object-cover"
                             />
@@ -114,7 +119,6 @@ const OurService = () => {
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-6 w-6 text-red-500"
                                     fill="none"
-                                    viewBox="0 0 24 24"
                                     stroke="currentColor"
                                 >
                                     <path
