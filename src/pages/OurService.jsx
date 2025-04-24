@@ -1,7 +1,7 @@
 import React from 'react';
-import Serivce1 from '../assets/service-1.jpg'
-import Serivce2 from '../assets/service-2.jpg'
-import Serivce3 from '../assets/service-3.jpg'
+import Service1 from '../assets/service-1.jpg'
+import Service2 from '../assets/service-2.jpg'
+import Service3 from '../assets/service-3.jpg'
 
 const OurService = () => {
     return (
@@ -22,20 +22,26 @@ const OurService = () => {
                     </div>
                     {/* Button */}
                     <div>
-                        <a href="#" className="inline-block mt-6 bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300" > See All Services </a>
+                        <a
+                            href="#"
+                            className="inline-block mt-6 bg-red-500 hover:bg-white hover:text-red-500 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-xl transition-all duration-300"
+                        >
+                            See All Services
+                        </a>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Risk  Card */}
-                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                        <div className="h-64 bg-gray-700 flex items-center justify-center">
-                            {/* Image  */}
+                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                        {/* image */}
+                        <div className="h-64 bg-gray-700 relative group overflow-hidden">
                             <img
-                                src={Serivce1}
+                                src={Service1}
                                 alt="Risk Management"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
                         </div>
                         <div className="p-6">
                             <h4 className="text-xl font-semibold text-white mb-4">Risk Management</h4>
@@ -62,14 +68,15 @@ const OurService = () => {
                     </div>
 
                     {/* Crisis Card */}
-                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                        <div className="h-64 bg-gray-700 flex items-center justify-center">
-                            {/* Image Placeholder */}
+                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                        {/* image */}
+                        <div className="h-64 bg-gray-700 relative group overflow-hidden">
                             <img
-                                src={Serivce2}
-                                alt="Crisis Management"
-                                className="w-full h-full object-cover"
+                                src={Service2}
+                                alt="Risk Management"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
                         </div>
                         <div className="p-6">
                             <h4 className="text-xl font-semibold text-white mb-4">Crisis Management</h4>
@@ -98,14 +105,15 @@ const OurService = () => {
                     </div>
 
                     {/* Security Management Card */}
-                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                        <div className="h-64 bg-gray-700 flex items-center justify-center">
-                            {/* Image Placeholder */}
+                    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                        {/* image */}
+                        <div className="h-64 bg-gray-700 relative group overflow-hidden">
                             <img
-                                src={Serivce3}
-                                alt="Security Management"
-                                className="w-full h-full object-cover"
+                                src={Service3}
+                                alt="Risk Management"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
                         </div>
                         <div className="p-6">
                             <h4 className="text-xl font-semibold text-white mb-4">Security Management</h4>
