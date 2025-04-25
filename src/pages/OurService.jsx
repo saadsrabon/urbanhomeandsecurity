@@ -7,7 +7,7 @@ const OurService = () => {
     return (
         <div className="bg-gray-900 py-16 md:py-24 mt-20">
             <div className="container mx-auto px-4">
-                <div className="mb-12 flex justify-between items-center">
+                <div className="mb-12 flex flex-col md:flex-row justify-between items-center">
                     {/* text */}
                     <div className='space-y-3'>
                         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-2">

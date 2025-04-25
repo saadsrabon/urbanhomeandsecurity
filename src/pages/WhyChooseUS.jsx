@@ -17,7 +17,7 @@ const services = [
     { icon: <Users className="text-white" size={20} />, title: "Highly Trained Team" },
     { icon: <ClipboardCheck className="text-white" size={20} />, title: "Proven Track Record" },
     { icon: <Star className="text-white" size={20} />, title: "Security Guaranteed" },
-    { icon: <Settings className="text-white" size={20} />, title: "Modern Equipments" },
+    { icon: <Settings className="text-white" size={20} />, title: "Modern Equipment" },
     { icon: <Briefcase className="text-white" size={20} />, title: "Years of Experience" },
 ];
 
