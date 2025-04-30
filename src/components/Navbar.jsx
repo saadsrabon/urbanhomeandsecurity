@@ -12,6 +12,9 @@ import {
 } from "react-icons/fa";
 import logo from "../assets/logo.png"; // Update with your logo path
 import MobileMenu from "./MobileNav";
+import { NavLink } from "react-router-dom";
+
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -70,14 +73,14 @@ export default function Navbar() {
         <div className="bg-black text-white text-sm px-4 md:px-18 py-2 flex justify-center md:flex-row md:justify-between items-center">
           <div className="flex justify-center items-center md:flex-row gap-2">
             <motion.span className="border-r pr-5"
-            
+
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              >
-               info@urbanhomeandsecurity.com
+            >
+              info@urbanhomeandsecurity.com
             </motion.span>
-           <motion.span  initial={{ opacity: 0, x: -20 }}
+            <motion.span initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }} className=" pl-2"> Houston, TX</motion.span>
           </div>
@@ -111,9 +114,8 @@ export default function Navbar() {
 
         {/* Main Navigation */}
         <nav
-          className={`transition-all duration-300 ${
-            scrolled ? "shadow-md py-2 fixed top-0" : "py-4"
-          }text-white sticky top-0 z-50 `}
+          className={`transition-all duration-300 ${scrolled ? "shadow-md py-2 fixed top-0" : "py-4"
+            }text-white sticky top-0 z-50 `}
         >
           <div className="container mx-auto px-4 flex justify-between items-center">
             <div className="text-xl font-bold">
@@ -121,113 +123,54 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Nav */}
-            <ul  className={`transition-all duration-300 z-50 hidden lg:flex gap-10 text-xl items-center font-monst border-none text-black  ${
-    scrolled
-      ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-6 py-3 shadow-lg border border-white/10 "
-      : "py-4 sticky top-0"
-  }`}>
+            <ul className={`transition-all duration-300 z-50 hidden lg:flex gap-10 text-xl items-center font-monst border-none text-black  ${scrolled
+              ? "fixed  top-4 left-1/2 -translate-x-1/2 bg-white backdrop-blur-lg rounded-full px-6 py-3 shadow-lg border border-white/10 "
+              : "py-4 sticky top-0"
+              }`}>
+
+              {/* Home Link */}
               <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300">
-                <a
-                  className="hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
-                  href="/"
-                >
-                  Home
-                </a>
+                <NavLink to="/" className=" hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300">Home</NavLink>
               </li>
+
+              {/* About Link */}
               <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300">
-                <a
-                  className=" hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
-                  href="/about"
-                >
-                  About
-                </a>
+                <NavLink to="/about" className=" hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300">About</NavLink>
               </li>
+
+              {/* Service Link */}
               <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300 group relative">
                 <button className="flex items-center gap-1 hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300">
-                  Services ▾
+                  <NavLink to="/service">Services ▾</NavLink>
                 </button>
                 <ul className="absolute top-12 hidden group-hover:block bg-white text-[#0A1F44] p-2 w-[400px] shadow-lg rounded mt-1">
                   <li>
-                    <a
-                      href="/remodeling"
-                      className="block px-4 py-1 hover:bg-gray-100  rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Remodeling & Renovation
-                    </a>
+                    <NavLink to="/securityPlaza" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Strip Plaza Security Service</NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/security"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] "
-                    >
-                      Security Installations
-                    </a>
+                    <NavLink to="/securityGuard" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Security Guard Services
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/ac"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Air Conditioning
-                    </a>
+                    <NavLink to="/securityHouse" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">House Sitting Services
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/steel-cage"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Steel Cage
-                    </a>
+                    <NavLink to="/securityInstallation" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Security Installations</NavLink>
                   </li>
-                  <li>
-                    <a
-                      href="/electrical"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Electrical Services
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/painting"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Painting & Power Washing
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/roofing"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Roofing
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/flooring"
-                      className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350"
-                    >
-                      Flooring & Cabinets
-                    </a>
-                  </li>
+
+
                 </ul>
               </li>
+
+              {/* Blog Link */}
+              {/* <li>
+                <NavLink to="/blog" className="flex items-center gap-1 hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300">Blog</NavLink>
+              </li> */}
+
+              {/* Appointment Link */}
               <li>
-                <a
-                  className="hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
-                  href="/blog"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300"
-                  href="/appointment"
-                >
-                  Appointment
-                </a>
+                <NavLink to="/appointment">Appointment</NavLink>
               </li>
             </ul>
 
