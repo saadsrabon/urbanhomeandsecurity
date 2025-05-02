@@ -46,8 +46,7 @@ const OurService = () => {
                         <div className="p-6">
                             <h4 className="text-xl font-semibold text-white mb-4">Risk Management</h4>
                             <p className="text-gray-400 text-base">
-                                Scelerisque pulvinar morbi felis odio ut mauris diam sit. Gravida
-                                faucibus integer at porta vitae diam.
+                                We identify vulnerabilities early and craft smart strategies to protect your assets, reputation, and operations.
                             </p>
                             {/* Red Arrow Icon */}
                             <div className="flex justify-end mt-4">
@@ -81,8 +80,7 @@ const OurService = () => {
                         <div className="p-6">
                             <h4 className="text-xl font-semibold text-white mb-4">Crisis Management</h4>
                             <p className="text-gray-400 text-base">
-                                Scelerisque pulvinar morbi felis odio ut mauris diam sit. Gravida
-                                faucibus integer at porta vitae diam.
+                                We respond swiftly to emergencies, minimizing disruption and restoring order with expert coordination.
                             </p>
                             {/* Red Arrow Icon */}
                             <div className="flex justify-end mt-4">
@@ -118,8 +116,7 @@ const OurService = () => {
                         <div className="p-6">
                             <h4 className="text-xl font-semibold text-white mb-4">Security Management</h4>
                             <p className="text-gray-400 text-base">
-                                Scelerisque pulvinar morbi felis odio ut mauris diam sit. Gravida
-                                faucibus integer at porta vitae diam.
+                                We design and oversee customized security plans that ensure safety, compliance, and peace of mind.
                             </p>
                             {/* Red Arrow Icon */}
                             <div className="flex justify-end mt-4">
