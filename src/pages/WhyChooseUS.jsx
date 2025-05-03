@@ -15,17 +15,17 @@ import OurPartner from './OurPartner';
 const services = [
     {
       icon: <ShieldCheck className="text-white" size={20} />,
-      title: "Expertise  in Security",
+      title: "Security Expertise",
       description: "We bring deep industry knowledge to every assignment, ensuring safety with precision."
     },
     {
       icon: <Users className="text-white" size={20} />,
-      title: "Highly Trained Team",
+      title: "Skilled Team",
       description: "Our professionals undergo rigorous training to handle any situation confidently."
     },
     {
       icon: <ClipboardCheck className="text-white" size={20} />,
-      title: "Proven Track Record",
+      title: "Trusted Results",
       description: "Trusted by businesses for delivering consistent, reliable protection."
     },
     {
@@ -47,7 +47,7 @@ const services = [
 
 const WhyChooseUS = () => {
     return (
-        <section className="px-16 py-16 max-w-7xl mx-auto  rounded-md mb-40 mt-40 ">
+        <section className="px-16 py-16 container mx-auto  rounded-md  mt-20 ">
             <h2 className="text-5xl text-[#0A1F44] font-bold mb-16 font-monst">Why <span className='text-[#00A3FF]'>Choose</span> Us</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-10 border-t border-b py-10 ">
                 {services.map((service, index) => (
@@ -55,9 +55,9 @@ const WhyChooseUS = () => {
                         <div className="bg-[#0A1F44] p-3 rounded-md">
                             {service.icon}
                         </div>
-                        <div key={index} className="flex justify-start items-start gap-4 p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-[#F9FBFF] transition-all duration-300      ">
+                        <div key={index} className="flex justify-start items-center gap-4 p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-[#F9FBFF] transition-all duration-300 h-40      ">
                             <h4 className="font-semibold text-2xl mb-1 text-[#00A3FF]">{service.title}</h4>
-                            <p className="text-sm text-[#0A1F44]">{service.description}</p>
+                            <p className="text-sm  text-[#0A1F44]">{service.description}</p>
                         </div>
                     </div>
                 ))}

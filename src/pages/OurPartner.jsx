@@ -13,9 +13,7 @@ const OurPartnerCompany = [
 
 const OurPartner = () => {
     return (
-        <div className="mt-25 py-16 md:py-24 py-3 border-t border-gray-200
-                                             transition-all duration-300 
-                                             hover:bg-gray-50/50 rounded-md px-2 shadow-md hover:shadow-xl">
+        <div className="mt-15 py-16 md:py-24 border-t border-gray-200 transition-all duration-300 hover:bg-gray-50/50 rounded-md px-2  hover:shadow-xl">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-4 sm:px-6 lg:px-8">
                 {/* Left Image Section */}
                 <div className="relative rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
@@ -24,9 +22,7 @@ const OurPartner = () => {
                         alt="Security Team"
                         className="w-full h-auto rounded-lg object-cover"
                     />
-                    <div className="absolute bottom-4 left-4 bg-red-600 p-3 rounded-full cursor-pointer
-                                    hover:scale-110 transition-transform duration-200
-                                    shadow-md hover:shadow-lg">
+                    <div className="absolute bottom-4 left-4 bg-red-600 p-3 rounded-full cursor-pointer hover:scale-110 transition-transform duration-200 shadow-md hover:shadow-lg">
                         <ArrowUpRight className="text-white w-6 h-6" />
                     </div>
                 </div>

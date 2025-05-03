@@ -169,16 +169,18 @@ export default function Navbar() {
               </li> */}
 
               {/* Appointment Link */}
-              <li>
-                <NavLink to="/appointment">Appointment</NavLink>
+              <li className="hover:bg-black/10 px-4 py-2 rounded-full  duration-300">
+                <NavLink to="/appointment" className=" hover:text-[#D7263D] hover:text-2xl hover:font-bold duration-300">Appointment</NavLink>
               </li>
             </ul>
 
             {/* Sticky CTA + Dark Mode */}
             <div className="hidden lg:flex gap-4 items-center">
-              <button className="bg-white text-[#D7263D] text-xl font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition">
-                Get a Quote
-              </button>
+              <a href="/appointment">
+                <button className="bg-white text-[#D7263D] text-xl font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition hover:cursor-pointer">
+                  Get a Quote
+                </button>
+              </a>
               <button
                 onClick={toggleDarkMode}
                 className="text-[#D7263D] text-xl"

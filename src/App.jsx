@@ -9,6 +9,7 @@ import SecurityPlaza from './pages/SecurityPlaza';
 import SecurityGuard from './pages/SecurityGuard';
 import SecurityHouse from './pages/SecurityHouse';
 import SecurityInstallations from './pages/SecurityInstallations';
+import AllServicePage from './pages/AllServicePage';
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<OurService />} />
-        <Route path="/blog" element={<OurService />} />
         {/* <Route path="/blog" element={<OurService />} /> */}
         <Route path="/appointment" element={<Appointment />} />
         {/*  */}
@@ -26,6 +26,7 @@ function App() {
         <Route path="/securityGuard" element={<SecurityGuard />} />
         <Route path="/securityHouse" element={<SecurityHouse />} />
         <Route path="/securityInstallation" element={<SecurityInstallations />} />
+        <Route path="/AllServicePages" element={<AllServicePage />} />
       </Routes>
       <Footer></Footer>
     </div>
