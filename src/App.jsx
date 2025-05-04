@@ -1,9 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import OurService from './pages/OurService';
+import Appointment from './pages/Appointment';
+import SecurityPlaza from './pages/SecurityPlaza';
+import SecurityGuard from './pages/SecurityGuard';
+import SecurityHouse from './pages/SecurityHouse';
+import SecurityInstallations from './pages/SecurityInstallations';
+import AllServicePage from './pages/AllServicePage';
 
 function App() {
   return (
@@ -12,7 +18,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/service" element={<OurService />} />
+        {/* <Route path="/blog" element={<OurService />} /> */}
+        <Route path="/appointment" element={<Appointment />} />
+        {/*  */}
+        <Route path="/securityPlaza" element={<SecurityPlaza />} />
+        <Route path="/securityGuard" element={<SecurityGuard />} />
+        <Route path="/securityHouse" element={<SecurityHouse />} />
+        <Route path="/securityInstallation" element={<SecurityInstallations />} />
+        <Route path="/AllServicePages" element={<AllServicePage />} />
       </Routes>
       <Footer></Footer>
     </div>

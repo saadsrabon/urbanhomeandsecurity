@@ -1,18 +1,19 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className="bg-black text-white">
             {/* Newsletter Section */}
             <div className="container mx-auto px-6 py-12 border-b border-gray-800">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="flex flex-col md:flex-row md:justify-between justify-center items-center gap-6">
                     <h2 className="text-2xl md:text-3xl font-semibold">Subscribe Our Newsletter</h2>
-                    <div className="flex gap-3">
+                    <div className="flex flex-col md:flex-row gap-3">
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="px-4 py-3 rounded-lg text-black focus:outline-none w-[250px]"
+                            className="px-4 py-3 rounded-lg bg-amber-50 text-black   w-[250px]"
                         />
                         <button className="bg-[#D7263D] px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-all duration-300">
                             Subscribe
@@ -35,10 +36,10 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-4">Navigation</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li className='hover:text-[#D7263D] duration-200'>Home</li>
-                        <li className='hover:text-[#D7263D] duration-200'>About Us</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Services</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Contact Us</li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/">Home</NavLink></li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/about">About Us</NavLink></li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/AllServicePages">Services</NavLink></li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/appointment">Contact Us</NavLink></li>
                     </ul>
                 </div>
 
@@ -46,10 +47,11 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-4">Services</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li className='hover:text-[#D7263D] duration-200'>Security Managment</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Security Consultation</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Risk Management</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Crisis Management</li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/securityPlaza">Strip Plaza Security</NavLink></li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/securityGuard">Security Guard Services</NavLink></li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/securityHouse">House Sitting Services</NavLink></li>
+                        <li className='hover:text-[#D7263D] duration-200'><NavLink to="/securityInstallation">Security Installations</NavLink></li>
+                        
                     </ul>
                 </div>
 
@@ -57,10 +59,10 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-4">Resources</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li className='hover:text-[#D7263D] duration-200'>Customer Stories</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Help Center</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Documentation</li>
-                        <li className='hover:text-[#D7263D] duration-200'>Blog & Guide</li>
+                       <a href="/"> <li className='hover:text-[#D7263D] duration-200'>Customer Stories</li></a>
+                        <a href="/appointment"><li className='hover:text-[#D7263D] duration-200'>Help Center</li></a>
+                        <a href="/appointment"><li className='hover:text-[#D7263D] duration-200'>Documentation</li></a>
+                        <a href="/service"><li className='hover:text-[#D7263D] duration-200'>Blog & Guide</li></a>
                     </ul>
                 </div>
             </div>

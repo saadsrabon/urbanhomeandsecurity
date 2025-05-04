@@ -5,19 +5,19 @@ const teamMembers = [
         name: "John Smith",
         position: "Chief Security Officer",
         image: "https://jagaen.tokotema.com/wp-content/uploads/2023/10/successful-bearded-freelance-businessman-looks-at-2022-12-08-04-13-21-utc-1-150x150.jpg",
-        icon: "https://cdn-icons-png.flaticon.com/512/733/733579.png"
+        
     },
     {
         name: "Emily Davis",
         position: "Head of Security Training",
         image: "https://jagaen.tokotema.com/wp-content/uploads/2023/10/portrait-of-serious-asian-businessman-man-outside-2022-12-08-04-05-53-utc-1-150x150.jpg",
-        icon: "https://cdn-icons-png.flaticon.com/512/733/733579.png"
+        
     },
     {
         name: "Michael Turner",
         position: "Lead Security Investigator",
         image: "https://jagaen.tokotema.com/wp-content/uploads/2023/10/portrait-happy-confident-smart-handsome-business-l-2023-03-27-18-33-04-utc-1-150x150.jpg",
-        icon: ""
+        
     },
 ];
 
