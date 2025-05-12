@@ -85,14 +85,10 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
                   className="ml-4 mt-2 flex flex-col border-l border-[#505050] pl-3 space-y-2"
                 >
                   {[
-                    "Remodeling",
-                    "Security",
-                    "Air Conditioning",
-                    "Steel Cage",
-                    "Electrical",
-                    "Painting",
-                    "Roofing",
-                    "Flooring",
+                    "Strip Plaza Security Service",
+                    "Security Guard Services",
+                    "House Sitting Services",
+                    "Security Installations",
                   ].map((service, i) => (
                     <motion.a
                       key={i}
@@ -115,13 +111,17 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
             className="pt-4 border-t border-gray-600 flex flex-col gap-3"
           >
             <span className="text-[16px] font-semibold">📞 (346) 365-7221</span>
-            <span className="text-[15px] italic font-semibold text-gray-300">
-              Free Quotes
-            </span>
+            <a href="/appointment">
+              <span className="text-[15px] italic font-semibold text-gray-300">
+                Free Quotes
+              </span>
+            </a>
             <div className="flex gap-4 items-center mt-2">
-              <button className="bg-white text-[#D7263D] text-[15px] font-bold px-4 py-1 rounded-full hover:scale-105 transition">
-                Get a Quote
-              </button>
+              <a href="/appointment">
+                <button className="bg-white text-[#D7263D] text-[15px] font-bold px-4 py-1 rounded-full hover:scale-105 transition">
+                  Get a Quote
+                </button>
+              </a>
               <button
                 onClick={toggleDarkMode}
                 className="text-[#D7263D] text-[20px] hover:scale-110 transition"
