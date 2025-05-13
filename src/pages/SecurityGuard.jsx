@@ -1,6 +1,7 @@
 import React from 'react';
 import SecurityGuard1 from "../assets/securityGuard-1.jpeg"
 import SecurityGuard2 from "../assets/securityGuard-2.jpeg"
+import  vandalism from "../assets/elvandalism.jpeg"
 
 const SecurityGuard = () => {
     return (
@@ -15,14 +16,14 @@ const SecurityGuard = () => {
                         <p className="text-[#6b6b6b] text-lg leading-relaxed font-semibold">
                             Our trained and certified guards offer proactive security and
                             <span className="text-[#0A1F44] text-xl font-semibold"> 24/7 protection</span>,
-                            services across industries..
+                            services across industries.
                         </p>
                         <p className="text-[#6b6b6b] text-base font-semibold">
                             From construction sites to event venues, we deploy trusted personnel with full reporting and vigilance.
                         </p>
                         <a href="/appointment">
                             <button className="mt-4 bg-[#D7263D] hover:bg-[#071633] text-white font-medium px-6 py-2 rounded-xl transition duration-300 hover:cursor-pointer">
-                                Take Appointment
+                                Make Appointment
                             </button>
                         </a>
                     </div>
@@ -41,6 +42,14 @@ const SecurityGuard = () => {
                                 />
                             </div>
                         ))}
+                    </div>
+                </div>
+
+                <div className="mt-14 my-8">
+                    <h2 className='text-2xl font-bold capitalize text-center'> We prevent electrical vandalism in the construction industry </h2>
+
+                    <div className='py-12 rounded-md'>
+                        <img className='rounded-xl' src={vandalism} alt="" />
                     </div>
                 </div>
             </div>

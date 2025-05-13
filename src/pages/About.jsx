@@ -72,18 +72,18 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">100%</h3>
-                  <p className="text-sm text-gray-600">Satisfied Clients</p>
+                  <p className="text-sm text-gray-600">Over 25 Satisfied Clients <br></br>In the Greater Houston Area </p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="bg-[#D7263D] text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">
                   02
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">200%</h3>
-                  <p className="text-sm text-gray-600">Total Awards</p>
+                  <p className="text-sm text-gray-600">Huston </p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Small image */}

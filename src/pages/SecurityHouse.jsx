@@ -13,7 +13,7 @@ const SecurityHouse = () => {
                     {/* Content Area */}
                     <div className="space-y-4">
                         <p className="text-[#6b6b6b] text-lg leading-relaxed font-semibold">
-                        Going away? We watch over your home, pick up mail, 
+                        Going away? We watch over your home, pick up mail 
                             <span className="text-[#0A1F44] text-xl font-semibold"></span>,
                             water plants, and keep everything safe and secure.
                         </p>

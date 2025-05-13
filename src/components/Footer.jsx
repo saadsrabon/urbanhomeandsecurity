@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white">
             {/* Newsletter Section */}
-            <div className="container mx-auto px-6 py-12 border-b border-gray-800">
+            {/* <div className="container mx-auto px-6 py-12 border-b border-gray-800">
                 <div className="flex flex-col md:flex-row md:justify-between justify-center items-center gap-6">
                     <h2 className="text-2xl md:text-3xl font-semibold">Subscribe Our Newsletter</h2>
                     <div className="flex flex-col md:flex-row gap-3">
@@ -20,7 +20,7 @@ const Footer = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Footer Navigation */}
             <div className="container mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
