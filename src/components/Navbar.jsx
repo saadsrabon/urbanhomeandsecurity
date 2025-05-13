@@ -145,18 +145,18 @@ export default function Navbar() {
                 </button>
                 <ul className="absolute top-12 hidden group-hover:block bg-white text-[#0A1F44] p-2 w-[400px] shadow-lg rounded mt-1">
                   <li>
-                    <NavLink to="/securityPlaza" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Strip Plaza Security Service</NavLink>
+                    <NavLink to="/securityPlaza" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Strip plaza security service</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/securityGuard" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Security Guard Services
+                    <NavLink to="/securityGuard" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Security guard services
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/securityHouse" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">House Sitting Services
+                    <NavLink to="/securityHouse" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">House sitting services
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/securityInstallation" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Security Installations</NavLink>
+                    <NavLink to="/securityInstallation" className="block px-4 py-1 hover:bg-gray-100 rounded-2xl hover:text-[#D7263D] hover:tex-[20px] hover:font-semibold duration-350 hover:tex-[20px] ">Security installations</NavLink>
                   </li>
 
 

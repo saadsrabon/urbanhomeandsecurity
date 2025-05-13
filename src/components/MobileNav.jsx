@@ -85,10 +85,10 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
                   className="ml-4 mt-2 flex flex-col border-l border-[#505050] pl-3 space-y-2"
                 >
                   {[
-                    "Strip Plaza Security Service",
-                    "Security Guard Services",
-                    "House Sitting Services",
-                    "Security Installations",
+                    "Strip plaza security service",
+                    "Security guard services",
+                    "House sitting services",
+                    "Security installations",
                   ].map((service, i) => (
                     <motion.a
                       key={i}
