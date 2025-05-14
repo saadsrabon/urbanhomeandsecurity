@@ -46,7 +46,7 @@ const OurService = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
                             </div>
                             <div className="p-6">
-                                <h4 className="text-xl font-semibold text-white mb-4">Security Guards - onstruction sites and vacant buildings</h4>
+                                <h4 className="text-xl font-semibold text-white mb-4 capitalize">Security Guards - Construction sites and vacant buildings</h4>
                                 <p className="text-gray-400 text-base">
                                     We identify vulnerabilities early and craft smart strategies to protect your assets, reputation, and operations.
                                 </p>
