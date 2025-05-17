@@ -78,7 +78,7 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              info@urbanhomeandsecurity.com
+              urban@securityforsites.com
             </motion.span>
             <motion.span initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
