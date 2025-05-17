@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { nav } from "framer-motion/client";
 
 const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
@@ -56,15 +56,15 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
           className="fixed top-0 left-0 w-4/5 max-w-sm h-full z-50 bg-black/80 text-white px-6 py-6 space-y-4 shadow-lg backdrop-blur-md overflow-y-auto flex flex-col"
         >
           {["Home", "About", "Blog", "Appointment"].map((item, index) => (
-            <motion.a
+            <motion.NavLink
               key={index}
-              href={`/${item.toLowerCase()}`}
+              to={`/${item.toLowerCase()}`}
               variants={itemVariants}
               whileHover={{ scale: 1.05, x: 5, color: "#FACC15" }}
               className="text-[16px] font-medium transition-all duration-200"
             >
               {item}
-            </motion.a>
+            </motion.NavLink>
           ))}
 
           {/* Services Dropdown */}
@@ -120,11 +120,11 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
               </span>
             </a>
             <div className="flex gap-4 items-center mt-2">
-              <a href="/appointment">
+              <NavLink to="/appointment">
                 <button className="bg-white text-[#D7263D] text-[15px] font-bold px-4 py-1 rounded-full hover:scale-105 transition">
                   Get a Quote
                 </button>
-              </a>
+              </NavLink>
               <button
                 onClick={toggleDarkMode}
                 className="text-[#D7263D] text-[20px] hover:scale-110 transition"

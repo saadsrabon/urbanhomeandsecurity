@@ -176,11 +176,11 @@ export default function Navbar() {
 
             {/* Sticky CTA + Dark Mode */}
             <div className="hidden lg:flex gap-4 items-center">
-              <a href="/appointment">
+              <NavLink to="/appointment">
                 <button className="bg-white text-[#D7263D] text-xl font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition hover:cursor-pointer">
                   Get a Quote
                 </button>
-              </a>
+              </NavLink>
               <button
                 onClick={toggleDarkMode}
                 className="text-[#D7263D] text-xl"
