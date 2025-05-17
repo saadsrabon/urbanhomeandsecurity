@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { nav } from "framer-motion/client";
 
 const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
   const [serviceOpen, setServiceOpen] = useState(false);
@@ -42,7 +44,7 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
       },
     },
   };
-
+  const navigate = useNavigate()
   return (
     <AnimatePresence>
       {menuOpen && (
@@ -90,15 +92,16 @@ const MobileMenu = ({ menuOpen, toggleDarkMode, darkMode }) => {
                     "House sitting services",
                     "Security installations",
                   ].map((service, i) => (
-                    <motion.a
+                    <motion.div
                       key={i}
-                      href={`/${service.toLowerCase().replace(/\s+/g, "-")}`}
+                      onClick={() => navigate(`/${service.toLowerCase().replace(/\s+/g, "-")}`)}
+
                       variants={itemVariants}
                       whileHover={{ scale: 1.05, x: 5, color: "#FACC15" }}
                       className="text-[15px] transition-all duration-150"
                     >
                       {service}
-                    </motion.a>
+                    </motion.div>
                   ))}
                 </motion.div>
               )}
